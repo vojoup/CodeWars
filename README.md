@@ -1,0 +1,1 @@
+This repo constains some of my solutions for a number of problems found at codewars.com .
