@@ -10,8 +10,7 @@ def likes(names):
 		return('{} and {} like this').format(names[0], names[1])
 	elif d == 3:
 		return('{}, {} and {} like this').format(names[0], names[1], names[2])
-	# else:
-		# print('{}, {} and').format(names[0], names[1]),
+	else:
+		return('{}, {} and {} others like this').format(names[0], names[1], d - 2)
 
-
-print(likes(['Peter', 'Anna', 'Blembulak', 'John']))
+print(likes(['Alex', 'Jacob', 'Mark', 'Max']))
