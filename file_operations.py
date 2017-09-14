@@ -5,7 +5,8 @@ class FileMaster():
     def extension(self):
         return self.filepath[-3:]
     def filename(self):
-
+        parts = self.filepath.split('/')
+        return parts[-1].split('.')[0]
     # def dirpath(self):
     #     #Your code here
 
@@ -14,7 +15,7 @@ master = FileMaster('/Users/person1/Pictures/house.png')
 master.extension()
 # should return >>> png
 
-# master.filename()
+master.filename()
 # should return >>> house
 
 # master.dirpath()
